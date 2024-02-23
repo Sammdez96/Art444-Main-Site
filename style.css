@@ -1,0 +1,55 @@
+/* CSS GOES HERE */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
+    background-color:#fff
+}
+section {
+    padding: 60px 40px;
+}
+
+section:nth-child(even) {
+    background-color: #DBFF33;
+    padding: 40px 40px
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container:hover {
+    background-color:#DBFF33
+}
+.container:active {
+    background-color:blue
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-list {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+@keyframes spinning-title {
+    from { transform:rotate(0deg);  }
+    to { transform:rotate(360deg); }
+}
