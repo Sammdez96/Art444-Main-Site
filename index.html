@@ -1,41 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+  <script src="https://kit.fontawesome.com/f31c97c802.js" crossorigin="anonymous"></script>
 <head>
   <meta charset="UTF-8">
   <title>Meet the Designer.</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div class="menu"></div>
 <!-- Main Navigation --> 
 <header id="main_nav">
   <div class="main_nav">
     <nav>
-      <ul>
-        <li><a class="smoothscroll" href="#header">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About</a></li>
-        <li><a class="smoothscroll" href="#skills">Skills</a></li>
-        <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-        <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        <a class="smoothscroll nav-button" href="#about">About</a>
+        <a class="smoothscroll nav-button" href="#skills">Skills</a>
+        <a class="smoothscroll nav-button" href="#gallery">Gallery</a>
+        <a class="smoothscroll nav-button" href="#faqs">FAQs</a>
+        <a class="smoothscroll nav-button" href="#contact">Contact</a>
       </ul>
     </nav>
   </div>
 </header>
 
+<div class="menu-popout">
+<a class="smoothscroll nav-button" href="#about">About</a>
+<a class="smoothscroll nav-button" href="#skills">Skills</a>
+<a class="smoothscroll nav-button" href="#gallery">Gallery</a>
+<a class="smoothscroll nav-button" href="#faqs">FAQs</a>
+<a class="smoothscroll nav-button" href="#contact">Contact</a>
+</div>
+
+
 <!-- Main Header --> 
   <section id="header" class="header" class="body">
-    <h1>Meet the Designer.</h1>
-    <div><img src="http://placehold.it/300x300" class="image" alt="Profile Picture"/></div>
-    <h2>Samantha Hernandez</h2>
-    <h4>Multimedia & Visual Design</h4>
+    <div><h1 class="meet-the-designer">Meet the Designer.</h1></div>
+    <div><img src="images/headshot.png" class="profile-pic" class="image" alt="Profile Picture" width="200" height="200"/></div>
+    <div class="container samantha-hernandez"><h3>Samantha Hernandez</h3></div>
+    <div><h4 class="mm-vd">Multimedia & Visual Design</h4></div>
+    <div class="behance-icon ig-icon"><i class="fa-brands fa-square-behance"></i>
+    <i class="fa-brands fa-instagram"></i></div>
   </section>
   
 <!-- About Section --> 
 <section id="about">
   <div class="container">
-    <div class="row">
-      <h2>About</h2>
+    <div>
+      <h2 class="about"></h2>
       <p>I am a multimedia designer based in San Diego, California. I am passionate about making original, innovative, and beautfiul design. 
         My work focuses on typographic design and video editing with visualizing strong, meaningful and impactful brand identity.</p>
     </div>
@@ -44,36 +58,39 @@
 
 <!-- Skills Section -->  
 <section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
+  <div class="container skills-list">
+    <h2 class="skills-title">Skills</h2>
   </div>
-  <div><ul><h3>Visual identity</h3></ul></div>
-  <div><ul><h3>User-centric focus</h3></ul></div>
-  <div><ul><h3>Creative direction</h3></ul></div>
-  <div><ul><h3>Digital design</h3></ul></div>
-  <div><ul><h3>Video editing</h3></ul></div>
-  <div><ul><h3>Social media marketing</h3></ul></div>
+  <div class="skills-flex-container">
+  <h3 class="skills white-vi">Visual identity</h3>
+  <h3 class="skills blue-ucf">User-centric focus</h3>
+  <h3 class="skills yellow-dd">Creative direction</h3></div>
+  <div class="skills-flex-container">
+  <h3 class="skills yellow-cd">Digital design</h3>
+  <h3 class="skills white-ve">Video editing</h3>
+  <h3 class="skills blue-smm">Social media marketing</h3></div>
 </section>
 
 <!-- Gallery Section -->  
 <section id="gallery">
-  <div class="container">
-    <h2>My Work</h2>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work One"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Two"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Three"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Four"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Five"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Six"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Seven"/></div>
-      <div><img src="http://placehold.it/300x300" class="image" alt="Work Eight"/></div>
-  </div>
+    <h2 class="my-work-title">My Work</h2>
+      <div class="my-work mw-flex-container">
+      <img src="images/mywork1.png" class="image" alt="Work One" width="350" height="300"/>
+      <img src="images/mywork2.png" class="image" alt="Work Two" width="350" height="300"/>
+      <img src="images/mywork3.png" class="image" alt="Work Three" width="400" height="300"/>
+      <img src="images/mywork4.jpeg" class="image" alt="Work Four" width="300" height="400"/>
+      <img src="images/mywork5.jpeg" class="image" alt="Work Five" width="300" height="400"/>
+      <img src="images/mywork6.jpg" class="image" alt="Work Six" width="500" height="300"/>
+      <img src="images/mywork7.jpeg" class="image" alt="Work Seven" width="300" height="400"/>
+      <img src="images/mywork8.jpeg" class="image" alt="Work Eight" width="300" height="300"/>
+      <img src="images/mywork9.png" class="image" alt="Work Nine" width="300" height="300"/>
+      </div>
 </section>
 
 <!-- Testimonials Section -->  
 <section id="faqs">
   <div class="container">
-    <h2>Frequent Asked Questions</h2>
+    <h2 class="faq-title">FAQ</h2>
       <h3>When will you be graduating from SDSU?</h3>
       <p>I will be graduating from San Diego State University this Spring, May 2024.</p>
       <h3>What do you have planned for after graduation?</h3>
@@ -90,18 +107,18 @@
 <!-- Contact Section -->  
 <section id="contact">
   <div class="container">
-    <h2>Contact Me</h2>
+    <h2 class="contact-title">Contact Me</h2>
     <form>
-      <div class="six columns">
+      <div class="six columns name-button">
         <label for="exampleRecipientInput">Name</label>
         <input class="u-full-width" type="text">
       </div>
-      <div class="six columns">
+      <div class="six columns email-button">
         <label for="exampleEmailInput">Email</label>
         <input class="u-full-width" type="email">
       </div>
     
-      <div>
+      <div class="email-button">
         <label for="exampleMessage">Message</label>
         <textarea class="u-full-width"></textarea>
       </div>
@@ -113,7 +130,7 @@
 <!-- Footer Section -->  
 
 <footer>
-  <div class="container">
+  <div class="container footer">
       <p>Copywrite © 2024, All Rights Reserved</p>
   </div>
 </footer>
