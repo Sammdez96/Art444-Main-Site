@@ -11,34 +11,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="menu"></div>
+<div class="menu" onclick="mymenu()" id="menu"></div>
 <!-- Main Navigation --> 
 <header id="main_nav">
-  <div class="main_nav">
+  <div class="main_nav container"> 
     <nav>
-        <a class="smoothscroll nav-button" href="#about">About</a>
-        <a class="smoothscroll nav-button" href="#skills">Skills</a>
-        <a class="smoothscroll nav-button" href="#gallery">Gallery</a>
-        <a class="smoothscroll nav-button" href="#faqs">FAQs</a>
-        <a class="smoothscroll nav-button" href="#contact">Contact</a>
+        <a class="nav-button" href="#about">About</a>
+        <a class="nav-button" href="#skills">Skills</a>
+        <a class="nav-button" href="#gallery">Gallery</a>
+        <a class="nav-button" href="#faqs">FAQs</a>
+        <a class="nav-button" href="#contact">Contact</a>
       </ul>
     </nav>
   </div>
 </header>
 
-<div class="menu-popout">
-<a class="smoothscroll nav-button" href="#about">About</a>
-<a class="smoothscroll nav-button" href="#skills">Skills</a>
-<a class="smoothscroll nav-button" href="#gallery">Gallery</a>
-<a class="smoothscroll nav-button" href="#faqs">FAQs</a>
-<a class="smoothscroll nav-button" href="#contact">Contact</a>
+<div class="menu-popout" id="menu-popout">
+<a class="nav-button-open" href="#about">About</a>
+<a class="nav-button-open" href="#skills">Skills</a>
+<a class="nav-button-open" href="#gallery">Gallery</a>
+<a class="nav-button-open" href="#faqs">FAQs</a>
+<a class="nav-button-open" href="#contact">Contact</a>
 </div>
 
 
 <!-- Main Header --> 
-  <section id="header" class="header" class="body">
-    <div><h1 class="meet-the-designer">Meet the Designer.</h1></div>
-    <div><img src="images/headshot.png" class="profile-pic" class="image" alt="Profile Picture" width="200" height="200"/></div>
+  <section id="header" class="header">
+    <div class="container">
+    <div><h1 class="meet-the-designer center">Meet the Designer.</h1></div>
+    <div><img src="images/headshot.png" class="profile-pic" class="image" alt="Profile Picture" width="300" height="300"/></div>
+    </div>
     <div class="container samantha-hernandez"><h3>Samantha Hernandez</h3></div>
     <div><h4 class="mm-vd">Multimedia & Visual Design</h4></div>
     <div class="behance-icon ig-icon"><i class="fa-brands fa-square-behance"></i>
@@ -73,7 +75,7 @@
 
 <!-- Gallery Section -->  
 <section id="gallery">
-    <h2 class="my-work-title">My Work</h2>
+    <h2 class="container my-work-title">My Work</h2>
       <div class="my-work mw-flex-container">
       <img src="images/mywork1.png" class="image" alt="Work One" width="350" height="300"/>
       <img src="images/mywork2.png" class="image" alt="Work Two" width="350" height="300"/>
@@ -134,6 +136,12 @@
       <p>Copywrite © 2024, All Rights Reserved</p>
   </div>
 </footer>
+
+<script>function mymenu() {
+document.getElementById('menu-popout').classList.toggle('open');
+document.getElementById('menu').classList.toggle('close');
+}
+</script>
 
 <script src="script.js"></script>
 </body>

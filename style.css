@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 120%;
     font-family: "Montserrat", sans-serif;
+    color: white;
     vertical-align: baseline;
-    background-color:#7E5F4F
+    background-color:#7E5F4F;
 }
 
 header {
@@ -15,10 +16,16 @@ header {
 }
 
 .container {
-    width: 100%;
-    max-width: 800px;
+    width: 150%;
+    max-width: 1020px;
     text-align: center;
     margin: 0 auto;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 nav ul {
@@ -31,11 +38,11 @@ nav ul {
 }
 
 .nav-button {
-background: rgba(255, 255, 255, 0.7);
+background: rgba(200, 200, 200, 0.7);
 border-radius: 24px;
 width:auto;
 display:inline-block;
-padding:12px 12px;
+padding:20px 20px;
 
 font-family: 'Montserrat';
 font-style: normal;
@@ -46,16 +53,41 @@ text-align: center;
 letter-spacing: 0.05em;
 text-decoration: none;
 color: #110D0D;
+margin-bottom: 35px;
+}
+
+.nav-button-open {
+background: rgba(255, 255, 255, 0.7);
+border-radius: 24px;
+width:auto;
+display:inline-block;
+padding:12px 12px;
+margin-bottom: 50px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 39px;
+text-align: center;
+letter-spacing: 0.05em;
+text-decoration: none;
+color: #110D0D;
+
 }
 
 .menu {
     height: 40px; 
     width: 40px; 
     background-image: url(images/2849812_menu_multimedia_bars_media_icon.svg);
+    background-size: 34px;
+    background-position:center;
+    background-repeat: no-repeat;
     position: fixed;
     top: 40px;
     left: 40px;
     display: none;
+    z-index:999;
 }
 
 
@@ -71,56 +103,54 @@ color: #110D0D;
     width: 115px;
     padding-left: 40px;
     transition: all 300ms;
-   margin: 0; 
-   margin-bottom: 10px; 
-   font-size: 18px; 
-   flex: justify-content;
-   flex-flow: left; 
+    margin: 0; 
+    margin-bottom: 10px; 
+    font-size: 18px; 
+    flex: justify-content;
+    flex-flow: left; 
+
+}
+
+.open {
+    left: 0px; 
+}
+
+.close {
+    background-image: url(images/8666595_x_icon.svg);
 
 }
 
 
 .meet-the-designer {
+position: relative;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 66px;
-line-height: 50px;
+line-height: 75px;
 letter-spacing: 0.05em;
 color: #DEFF58;
 
 }
 
 .samantha-hernandez {
-width: 322px;
-height: 117px;
-left: 609px;
-top: 129px;
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
 line-height: 55px;
 letter-spacing: 0.05em;
-
 color: #0803FF;
-
 
 }
 
 .mm-vd {
-position: absolute;
-width: 429px;
-height: 129px;
-left: 609px;
-top: 300px;
-
+text-align: center;
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 124px;
+font-weight: 450;
+font-size: 32px;
+line-height: 50px;
 letter-spacing: 0.05em;
 color: #110D0D;
 
@@ -138,19 +168,18 @@ text-align:center;
 
 
 .profile-pic {
-left: 100px;
-top: 100px;
 width:auto;
 display:inline-block;
-padding:15px 20px;
-border-radius:50%;
+margin-bottom:5px;
+margin-top: 30px;
+padding:25px;
+border-radius:75%;
 border: 2px solid white;
-
 
 }
 
 .skills-title {
-
+padding: 40px; 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
@@ -162,7 +191,6 @@ color: #DEFF58;
 }
 
 .skills {
-
 border:1px solid black;
 width:auto;
 display:inline-block;
@@ -239,14 +267,14 @@ color: #110D0D;
     }
 
 .my-work-title {
+margin-top:100px; 
+padding: 30px; 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
 font-size: 44px;
 line-height: 54px;
 letter-spacing: 0.05em;
-text-align: center;
-
 color: #DEFF58;
 }
 
