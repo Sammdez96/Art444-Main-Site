@@ -9,6 +9,13 @@
     display: none;
 }
 
+.skills {
+    justify-content: center;   
+}
+
+.mw-flex-container {
+    justify-content: center;
+}
 
 }
 
@@ -20,6 +27,14 @@
     
     .nav-button {
         display: none;
+    }
+
+    .skills {
+        justify-content: center; 
+    }
+
+    .mw-flex-container {
+        justify-content: center;
     }
   
 }

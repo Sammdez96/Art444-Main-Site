@@ -27,11 +27,11 @@
 </header>
 
 <div class="menu-popout" id="menu-popout">
-<a class="nav-button-open" href="#about">About</a>
-<a class="nav-button-open" href="#skills">Skills</a>
-<a class="nav-button-open" href="#gallery">Gallery</a>
-<a class="nav-button-open" href="#faqs">FAQs</a>
-<a class="nav-button-open" href="#contact">Contact</a>
+<a class="nav-button-open" onclick="closemenu()" href="#about">About</a>
+<a class="nav-button-open" onclick="closemenu()" href="#skills">Skills</a>
+<a class="nav-button-open" onclick="closemenu()" href="#gallery">Gallery</a>
+<a class="nav-button-open" onclick="closemenu()" href="#faqs">FAQs</a>
+<a class="nav-button-open" onclick="closemenu()" href="#contact">Contact</a>
 </div>
 
 
@@ -93,14 +93,14 @@
 <section id="faqs">
   <div class="container">
     <h2 class="faq-title">FAQ</h2>
-      <h3>When will you be graduating from SDSU?</h3>
+      <h3 class="faq-questions">When will you be graduating from SDSU?</h3>
       <p>I will be graduating from San Diego State University this Spring, May 2024.</p>
-      <h3>What do you have planned for after graduation?</h3>
+      <h3 class="faq-questions">What do you have planned for after graduation?</h3>
       <p>After graduation I plan on taking a vacation and spending some time catching up with my family and friends, then I will commence a job search in my chosen career field.</p>     
-      <h3>What was your favorite class you took at SDSU?</h3>
+      <h3 class="faq-questions">What was your favorite class you took at SDSU?</h3>
       <p>My favorite class was furniture class and my VFX Aftereffects class. I was new to both furniture design and using power tools as well as experiencing working with video editing special effects in another class. 
         I ended up producing projects I ended up really loving.</p>
-      <h3>What work are you most proud producing at SDSU?</h3>
+      <h3 class="faq-questions">What work are you most proud producing at SDSU?</h3>
       <p>I am most excited about an experimental video on Aftereffects software that I made in my Visual Effects class last semester because it opened up new lanes of interest I now I have in cinema and filmmaking.
         I want to continue collaborating with other creative people and venture into getting involved with filmmaking in the future.</p>
   </div>
@@ -137,9 +137,15 @@
   </div>
 </footer>
 
-<script>function mymenu() {
+<script>
+
+function mymenu() {
 document.getElementById('menu-popout').classList.toggle('open');
 document.getElementById('menu').classList.toggle('close');
+}
+function closemenu() {
+  document.getElementById('menu-popout').classList.remove('open');
+  document.getElementById('menu').classList.remove('close');
 }
 </script>
 
