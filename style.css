@@ -1,4 +1,22 @@
 /* CSS GOES HERE */
+.darkmode-button {
+    height: 40px; 
+    width: 40px; 
+    top: 40px;
+    right: 100px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-image:url(images/moon-regular.svg);
+    position: absolute;
+    
+}
+
+.lightmode-button {
+    background-image:url(images/sun-regular.svg);
+    background-size: 40px 40px;
+    
+
+}
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +27,12 @@ body {
     vertical-align: baseline;
     background-color:#7E5F4F;
 }
+
+.body-darkmode {
+    background-color: #110D0D;
+
+}
+
 
 header {
     font-size:66px;
@@ -41,6 +65,7 @@ nav ul {
 
 }
 
+
 .nav-button {
 background: rgba(200, 200, 200, 0.7);
 border-radius: 24px;
@@ -59,6 +84,7 @@ text-decoration: none;
 color: #110D0D;
 margin-bottom: 35px;
 }
+
 
 .nav-button-open {
 background: rgba(255, 255, 255, 0.7);
@@ -151,6 +177,10 @@ color: #0803FF;
 
 }
 
+.samanthahernandez-darkmode {
+color:white;
+}
+
 .mm-vd {
 positon: relative;
 text-align: center;
@@ -162,6 +192,10 @@ line-height: 50px;
 letter-spacing: 0.05em;
 color: #110D0D;
 
+}
+
+.mm-vd-darkmode {
+color:#7E5F4F;
 }
 
 .behance-icon {
@@ -184,6 +218,16 @@ padding:25px;
 border-radius:75%;
 border: 2px solid white;
 
+}
+
+.profile-pic-darkmode {
+width:auto;
+display:inline-block;
+margin-bottom:5px;
+margin-top: 30px;
+padding:25px;
+border-radius:75%;
+border: 2px solid #0803FF;
 }
 
 .skills-title {

@@ -12,6 +12,10 @@
 </head>
 <body>
 <div class="menu" onclick="mymenu()" id="menu"></div>
+
+
+<div class="darkmode-button" onclick="darkmode()" id="darkmode"></div>
+
 <!-- Main Navigation --> 
 <header id="main_nav">
   <div class="main_nav container"> 
@@ -138,6 +142,15 @@
 </footer>
 
 <script>
+
+function darkmode() {
+document.getElementsByTagName('body')[0].classList.toggle('body-darkmode');
+document.getElementsByClassName('samantha-hernandez')[0].classList.toggle('samanthahernandez-darkmode');
+document.getElementsByClassName('mm-vd')[0].classList.toggle('mm-vd-darkmode');
+document.getElementsByClassName('profile-pic')[0].classList.toggle('profile-pic-darkmode');
+document.getElementById('darkmode').classList.toggle('lightmode-button');
+}
+
 
 function mymenu() {
 document.getElementById('menu-popout').classList.toggle('open');
