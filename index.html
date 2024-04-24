@@ -97,15 +97,22 @@
 <section id="faqs">
   <div class="container text-padding">
     <h2 class="faq-title">FAQ</h2>
+    <div class="faq-toggle">
       <h3 class="faq-questions">When will you be graduating from SDSU?</h3>
-      <p>I will be graduating from San Diego State University this Spring, May 2024.</p>
+      <p class="faq-body">I will be graduating from San Diego State University this Spring, May 2024.</p> 
+    </div>
+    <div class="faq-toggle">
       <h3 class="faq-questions">What do you have planned for after graduation?</h3>
-      <p>After graduation I plan on taking a vacation and spending some time catching up with my family and friends, then I will commence a job search in my chosen career field.</p>     
-      <h3 class="faq-questions">What was your favorite class you took at SDSU?</h3>
-      <p>My favorite class was furniture class and my VFX Aftereffects class. I was new to both furniture design and using power tools as well as experiencing working with video editing special effects in another class. 
+      <p class="faq-body">After graduation I plan on taking a vacation and spending some time catching up with my family and friends, then I will commence a job search in my chosen career field.</p>     
+      </div>
+      <div class="faq-toggle">
+        <h3 class="faq-questions">What was your favorite class you took at SDSU?</h3>
+        <p class="faq-body">My favorite class was furniture class and my VFX Aftereffects class. I was new to both furniture design and using power tools as well as experiencing working with video editing special effects in another class. 
         I ended up producing projects I ended up really loving.</p>
-      <h3 class="faq-questions">What work are you most proud producing at SDSU?</h3>
-      <p>I am most excited about an experimental video on Aftereffects software that I made in my Visual Effects class last semester because it opened up new lanes of interest I now I have in cinema and filmmaking.
+        </div>
+      <div class="faq-toggle">
+        <h3 class="faq-questions">What work are you most proud producing at SDSU?</h3>
+        <p class="faq-body">I am most excited about an experimental video on Aftereffects software that I made in my Visual Effects class last semester because it opened up new lanes of interest I now I have in cinema and filmmaking.
         I want to continue collaborating with other creative people and venture into getting involved with filmmaking in the future.</p>
   </div>
 </section>
@@ -113,7 +120,7 @@
 <!-- Contact Section -->  
 <section id="contact">
   <div class="container">
-    <h2 class="contact-title">Contact Me</h2>
+    <h2 class="contact-title">Contact Here</h2>
     <form>
       <div class="six columns name-button">
         <label for="exampleRecipientInput">Name</label>
@@ -143,12 +150,40 @@
 
 <script>
 
+  const faqToggle = document.querySelectorAll('.faq-toggle')
+
+  for (let i = 0; i < faqToggle.length; i++) {
+    faqToggle[i].addEventListener ("click", function() { this.classList.toggle('faq-open') })
+  }
+
+// function FAQToggle() {
+// document.getElementbyClassName ('faq-toggle')[0].classList.toggle('faq-open')}
+
 function darkmode() {
 document.getElementsByTagName('body')[0].classList.toggle('body-darkmode');
 document.getElementsByClassName('samantha-hernandez')[0].classList.toggle('samanthahernandez-darkmode');
 document.getElementsByClassName('mm-vd')[0].classList.toggle('mm-vd-darkmode');
 document.getElementsByClassName('profile-pic')[0].classList.toggle('profile-pic-darkmode');
+document.getElementsByClassName('contact-title')[0].classList.toggle('contact-title-darkmode');
 document.getElementById('darkmode').classList.toggle('lightmode-button');
+
+const faqToggle = document.querySelectorAll('.faq-toggle')
+
+for (let i = 0; i < faqToggle.length; i++) {
+  faqToggle[i].classList.toggle('faq-toggle-darkmode') }
+
+
+const faqQuestions = document.querySelectorAll('.faq-questions')
+
+for (let i = 0; i < faqToggle.length; i++) {
+  faqQuestions[i].classList.toggle('faq-questions-darkmode') }
+
+
+const faqBody = document.querySelectorAll('.faq-body')
+
+for (let i = 0; i < faqToggle.length; i++) {
+  faqBody[i].classList.toggle('faq-body-darkmode') }
+
 }
 
 
@@ -160,6 +195,7 @@ function closemenu() {
   document.getElementById('menu-popout').classList.remove('open');
   document.getElementById('menu').classList.remove('close');
 }
+
 </script>
 
 <script src="script.js"></script>

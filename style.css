@@ -36,7 +36,7 @@ body {
 
 header {
     font-size:66px;
-    padding: 80px;
+    padding: 80px 0px;
 }
 
 .container {
@@ -358,6 +358,23 @@ gap: 20px;
     object-fit: cover;
 }
 
+.faq-toggle {
+background-color: #e9dfda;
+padding: 15px; 
+border-radius: 15px; 
+box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+height: 50px; 
+margin: 30px;
+max-width:940px;
+margin-right:auto;
+margin-left:auto;
+overflow: hidden; 
+}
+
+.faq-open {
+height: auto;
+}
+
 .faq-title {
 font-family: 'Montserrat';
 font-style: normal;
@@ -366,13 +383,29 @@ font-size: 44px;
 line-height: 54px;
 letter-spacing: 0.05em;
 text-align: center;
-
 color: #DEFF58;
 }
 
 .faq-questions {
 color:#0803FF;
 }
+
+.faq-body {
+color: #110D0D;
+}
+
+.faq-toggle-darkmode {
+    background-color:#7E5F4F;
+    }
+
+.faq-questions-darkmode {
+    color: white; 
+    }
+
+.faq-body-darkmode {
+color:#DEFF58; 
+}
+
 
 .contact-title {
     font-family: 'Montserrat';
@@ -383,6 +416,10 @@ color:#0803FF;
     letter-spacing: 0.05em;
     text-align: center;
     color: #DEFF58;
+}
+
+.contact-title-darkmode {
+color:#0803FF;   
 }
 
 
