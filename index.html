@@ -19,11 +19,11 @@
 <header id="main_nav">
   <div class="main_nav container"> 
     <nav>
-        <a class="nav-button" href="#about">About</a>
-        <a class="nav-button" href="#skills">Skills</a>
-        <a class="nav-button" href="#gallery">Gallery</a>
-        <a class="nav-button" href="#faqs">FAQs</a>
-        <a class="nav-button" href="#contact">Contact</a>
+        <a class="nav-button grow-hover" href="#about">About</a>
+        <a class="nav-button grow-hover" href="#skills">Skills</a>
+        <a class="nav-button grow-hover" href="#gallery">Gallery</a>
+        <a class="nav-button grow-hover" href="#faqs">FAQs</a>
+        <a class="nav-button grow-hover" href="#contact">Contact</a>
       </ul>
     </nav>
   </div>
@@ -44,7 +44,8 @@
     <div><h1 class="meet-the-designer center">Meet the Designer.</h1></div>
     <div><img src="images/headshot.png" class="profile-pic" class="image" alt="Profile Picture" width="300" height="300"/></div>
     </div>
-    <div class="container samantha-hernandez"><h3>Samantha Hernandez</h3></div>
+    <div class="container samantha-hernandez">
+      <a class="grow-hover"><h3>Samantha Hernandez</h3></a></div>
     <div><h4 class="mm-vd">Multimedia & Visual Design</h4></div>
     <div class="sm-icons">
     <a class="behance-icon" href="https://samanthamhernandez.myportfolio.com/work">
@@ -71,28 +72,57 @@
     <h2 class="skills-title">Skills</h2>
   </div>
   <div class="skills-flex-container">
-  <h3 class="skills white-vi">Visual identity</h3>
-  <h3 class="skills blue-ucf">User-centric focus</h3>
-  <h3 class="skills yellow-dd">Creative direction</h3></div>
+  <div class="flip"><h3 class="skills white-vi">Visual identity</h3></div>
+  <div class="flip"><h3 class="skills blue-ucf">User-centric focus</h3></div>
+  <div class="flip"><h3 class="skills yellow-dd">Creative direction</h3></div>
+  </div>
   <div class="skills-flex-container">
-  <h3 class="skills yellow-cd">Digital design</h3>
-  <h3 class="skills white-ve">Video editing</h3>
-  <h3 class="skills blue-smm">Social media marketing</h3></div>
+  <div class="flip"><h3 class="skills yellow-cd">Digital design</h3></div>
+  <div class="flip"><h3 class="skills white-ve">Video editing</h3></div>
+  <div class="flip"><h3 class="skills blue-smm">Social media marketing</h3></div>
+</div>
 </section>
 
 <!-- Gallery Section -->  
 <section id="gallery">
     <h2 class="container my-work-title">My Work</h2>
       <div class="my-work mw-flex-container">
-      <img src="images/mywork1.png" class="image" alt="Work One" width="350" height="300"/>
-      <img src="images/mywork2.png" class="image" alt="Work Two" width="350" height="300"/>
-      <img src="images/mywork3.png" class="image" alt="Work Three" width="400" height="300"/>
-      <img src="images/mywork4.jpeg" class="image" alt="Work Four" width="300" height="400"/>
-      <img src="images/mywork5.jpeg" class="image" alt="Work Five" width="300" height="400"/>
-      <img src="images/mywork6.jpg" class="image" alt="Work Six" width="500" height="300"/>
-      <img src="images/mywork7.jpeg" class="image" alt="Work Seven" width="300" height="400"/>
-      <img src="images/mywork8.jpeg" class="image" alt="Work Eight" width="300" height="300"/>
-      <img src="images/mywork9.png" class="image" alt="Work Nine" width="300" height="300"/>
+      <a href="#img1"><img src="images/mywork1.png" class="image" alt="Work One" width="350" height="300"/></a>
+      <a class="lightbox" href="#" id="img1">
+        <span style="background-image: url('images/mywork1.png')"></span>
+      </a>
+      <a href="#img2"><img src="images/mywork2.png" class="image" alt="Work Two" width="350" height="300"/></a>
+      <a class="lightbox" href="#" id="img2">
+        <span style="background-image: url('images/mywork2.png')"></span>
+      </a>
+      <a href="#img3"><img src="images/mywork3.png" class="image" alt="Work Three" width="400" height="300"/></a>
+      <a class="lightbox" href="#" id="img3">
+        <span style="background-image: url('images/mywork3.png')"></span>
+      </a>
+      <a href="#img4"><img src="images/mywork4.jpeg" class="image" alt="Work Four" width="300" height="400"/></a>
+      <a class="lightbox" href="#" id="img4">
+        <span style="background-image: url('images/mywork4.jpeg')"></span>
+      </a>
+      <a href="#img5"><img src="images/mywork5.jpeg" class="image" alt="Work Five" width="300" height="400"/></a>
+      <a class="lightbox" href="#" id="img5">
+        <span style="background-image: url('images/mywork5.jpeg')"></span>
+      </a>
+      <a href="#img6"><img src="images/mywork6.jpg" class="image" alt="Work Six" width="500" height="300"/>
+      <a class="lightbox" href="#" id="img6">
+        <span style="background-image: url('images/mywork6.jpg')"></span>
+      </a>
+      <a href="#img7"><img src="images/mywork7.jpeg" class="image" alt="Work Seven" width="300" height="400"/></a>
+      <a class="lightbox" href="#" id="img7">
+        <span style="background-image: url('images/mywork7.jpeg')"></span>
+      </a>
+      <a href="#img8"><img src="images/mywork8.jpeg" class="image" alt="Work Eight" width="300" height="300"/></a>
+      <a class="lightbox" href="#" id="img8">
+        <span style="background-image: url('images/mywork8.jpeg')"></span>
+      </a>
+      <a href="#img9"><img src="images/mywork9.png" class="image" alt="Work Nine" width="300" height="300"/>
+        <a class="lightbox" href="#" id="img9">
+          <span style="background-image: url('images/mywork9.png')"></span>
+        </a>
       </div>
 </section>
 
@@ -151,6 +181,8 @@
   </div>
 </footer>
 
+
+
 <script>
 
 
@@ -203,5 +235,6 @@ function closemenu() {
 </script>
 
 <script src="script.js"></script>
+
 </body>
 </html>
