@@ -57,6 +57,10 @@
     .menu {
         display: block;
     }
+
+    .meet-the-designer {
+        text-align: left;
+        padding-left: 10px;
     
     .nav-button {
         display: none;
@@ -97,4 +101,5 @@
 }
 
 
+}
 }
