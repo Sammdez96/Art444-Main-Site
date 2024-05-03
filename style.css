@@ -29,7 +29,7 @@ body {
 }
 
 .body-darkmode {
-    background-color: #110D0D;
+    background-color: #1c1717;
 
 }
 
@@ -107,20 +107,6 @@ color: #110D0D;
 
 }
 
-.grow-hover {
-	display: inline-block;
-	transition-duration: $defaultDuration;
-	transition-property: transform;
-
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
-
-	&:hover {
-		transform: scale(1.1);
-	}
-}
-
 .menu {
     height: 40px; 
     width: 40px; 
@@ -170,6 +156,7 @@ color: #110D0D;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
 
     }
     
@@ -189,13 +176,13 @@ color: #DEFF58;
 }
 
 .samantha-hernandez {
-positon: relative;
+position: relative;
 text-align: center;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
-line-height: 55px;
+line-height: 40px;
 letter-spacing: 0.05em;
 color: #0803FF;
 
@@ -207,16 +194,14 @@ color:white;
 
 
 .mm-vd {
-positon: relative;
 text-align: center;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 450;
-font-size: 32px;
-line-height: 40px;
+font-size: 30px;
+line-height: 10px;
 letter-spacing: 0.05em;
 color: #110D0D;
-
 }
 
 .mm-vd-darkmode {
