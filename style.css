@@ -415,6 +415,7 @@ a:hover {
 }
 
 .faq-toggle {
+align-content: center;
 background-color: #e9dfda;
 padding: 15px;
 border-radius: 15px; 
