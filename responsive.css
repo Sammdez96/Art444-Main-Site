@@ -45,9 +45,6 @@
     justify-content: center;
 }
 
-.faq-toggle {
-    height: 60px;
-}
 }
 
 
@@ -61,10 +58,6 @@
     .nav-button {
         display: none;
     }
-
-    .faq-toggle {
-        height: 179px;
-            }
 
     .skills-flex-container {
         justify-content: center;
